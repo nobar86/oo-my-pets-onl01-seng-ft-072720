@@ -56,13 +56,13 @@ class Owner
     pets.each do |pet|
       pet.mood = "nervous"
       pet.owner = nil
-      
     end
   end
   
   def dogs
     Dog.all.select{|d|d.owner == self}
   end
+  
   def cats
     Cat.all.select{|c|c.owner == self}
   end
