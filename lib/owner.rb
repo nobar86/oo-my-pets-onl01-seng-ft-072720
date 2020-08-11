@@ -13,7 +13,6 @@ class Owner
    @@all << self
    @cats = []
    @dogs =[]
-   @pets = { :dogs => [], :cats => []}
  end
   
   def self.all
@@ -33,8 +32,7 @@ class Owner
   end
   
   def buy_cat(cat_name)
-   @pets[:cats] << Cat.new(cat_name)
-    @@all << self.buy_cat
+  
   end
   
   def buy_dog(name)
