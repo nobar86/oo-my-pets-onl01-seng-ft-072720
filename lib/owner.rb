@@ -4,7 +4,7 @@ class Owner
   attr_accessor :pets, :cats, :dogs
  
  @@all = []
- @@pets = {:dogs => [], :cats => []}
+
 
  
  def initialize(name)
@@ -32,7 +32,7 @@ class Owner
   end
   
   def buy_cat(name)
-   @@pets[:cats] << Cat.new(name)
+   
   end
   
   def buy_dog(name)
