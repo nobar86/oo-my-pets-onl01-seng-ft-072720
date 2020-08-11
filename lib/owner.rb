@@ -13,7 +13,7 @@ class Owner
    @@all << self
    @cats = []
    @dogs =[]
-   @pets = 
+   @pets = { :dogs => [], :cats => []}
  end
   
   def self.all
