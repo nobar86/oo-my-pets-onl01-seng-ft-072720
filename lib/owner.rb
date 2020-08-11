@@ -13,6 +13,7 @@ class Owner
    @@all << self
    @cats = []
    @dogs =[]
+   @pets = pets 
  end
   
   def self.all
