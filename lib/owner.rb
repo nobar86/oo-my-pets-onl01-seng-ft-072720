@@ -11,7 +11,8 @@ class Owner
    @name = name
    @species = "human"
    @@all << self
-    @pets = {:dogs => [], :cats => []}
+   @cats = []
+   @dogs =[]
  end
   
   def self.all
