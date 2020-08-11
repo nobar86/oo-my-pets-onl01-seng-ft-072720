@@ -11,8 +11,8 @@ class Owner
    @name = name
    @species = "human"
    @@all << self
-   @cats = []
-   @dogs =[]
+   
+   
  end
   
   def self.all
@@ -40,17 +40,24 @@ class Owner
   end
   
   def walk_dogs
-   @dogs.each do |dog|
+   dogs.each do |dog|
     dog.mood = "happy"
     end
   end
   
   def feed_cats
-    @cats.each do |cat|
+    cats.each do |cat|
       cat.mood = "happy"
     end
   end
   
+  def sell_pets
+    pets = dogs + cats
+    pets.each do |pet|
+      pet.mood = "nervous"
+      pet.owner = nil 
+    end
+  end
    
   
   
