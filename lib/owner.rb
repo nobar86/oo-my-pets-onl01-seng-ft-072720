@@ -51,6 +51,12 @@ class Owner
     end
   end
   
-  
+  @pets.each do |type, name_array|
+      name_array.each do |pet|
+        pet.mood = "nervous"
+      end 
+    end
+    @pets = {}
+  end
   
 end
